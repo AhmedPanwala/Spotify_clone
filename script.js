@@ -8,7 +8,7 @@ let songs
 // Fetched the songs from the folder
 async function getSongs(folder) {
     currFolder = folder
-    let a = await fetch(`http://127.0.0.1:5500/songs/${folder}`)
+    let a = await fetch(`https://spotify-clone-eight-black.vercel.app/songs/${folder}`)
     let response = await a.text();
 
     //  stored stored in the playlist  
@@ -50,7 +50,7 @@ const playMusic = (track, pause = false) => {
 async function displayAlbums() {
 
     let card = document.querySelector('.cardcontainer')
-    let a = await fetch(`http://127.0.0.1:5500/songs/`)
+    let a = await fetch(`https://spotify-clone-eight-black.vercel.app/songs/`)
     let response = await a.text();
     let div = document.createElement('div')
     div.innerHTML = response
@@ -59,7 +59,7 @@ async function displayAlbums() {
     for (const e of anchor) {
         if (e.href.includes('/songs/')) {
             let folder = e.href.split('/').slice(-1).pop()
-            let b = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`)
+            let b = await fetch(`https://spotify-clone-eight-black.vercel.app/songs/${folder}/info.json`)
             let response = await b.json();
 
             card.innerHTML += `
