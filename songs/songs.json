@@ -1,0 +1,23 @@
+{
+  "Bollywood": [
+    "song1.mp3",
+    "song2.mp3",
+    "song3.mp3"
+  ],
+  "HipHop": [
+    "AP1.mp3",
+    "AP2.mp3",
+    "KA1.mp3",
+    "KA2.mp3",
+    "KA3.mp3",
+    "KA4.mp3",
+    "KA5.mp3",
+    "S1.mp3",
+    "S2.mp3",
+    "S3.mp3"
+  ],
+  "Old":[
+    "S1.mp3",
+    "S2.mp3"
+  ]
+}
