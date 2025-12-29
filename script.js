@@ -36,8 +36,8 @@ function secondsToMinSec(sec) {
 }
 
 
-const playMusic = (track, pause = false) => {
-    currentSong.src = `/songs/${currFolder}/${track}`;
+const playMusic = (track, pause = false) => {    
+    currentSong.src = `songs/${currFolder}/${track}`;
     if (!pause) {
         currentSong.play()
         play.src = "./Imagess/pause.svg"
